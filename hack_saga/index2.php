@@ -43,7 +43,7 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="generic.html">Share a story</a></li>
-							<li><a href="generic.html">Adaptors login</a></li>
+							<li><a href="generic.html">Edit a story</a></li>
 							<li><a href="generic.html">Admin login</a></li>
 
 						</ul>

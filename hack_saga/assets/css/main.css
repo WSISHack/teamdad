@@ -1996,10 +1996,11 @@
 
 			ul.actions.fit {
 				display: table;
-				margin-left: -1em;
+				position: relative;
+				margin-left: -1em; /* midtstill kan denne gjøres auto!*/
 				padding: 0;
 				table-layout: fixed;
-				width: calc(100% + 1em);
+				width: 40%;
 			}
 
 				ul.actions.fit li {
