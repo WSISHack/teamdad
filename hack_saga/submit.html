@@ -6,14 +6,37 @@
 -->
 <html>
 	<head>
-		<title>Generic - Phantom by HTML5 UP</title>
+		<title>SAGA - Share Your Story</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('a#show_text').show();
+    $("a#show_text").click(function(){
+          $("#audio").hide();
+          $("#textadd").show();
+    });
+
+    $("a#show_audio").click(function(){
+          $("#textadd").hide();
+          $("#audio").show();
+    });
+	});
+
+		</script>
+
 	</head>
+
 	<body>
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -24,7 +47,7 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="saga.png" alt="" /></span><span class="title"></span>
+									<span class="symbol"><img src="saga.png" alt="SAGA: The webpage's logo" /></span><span class="title"></span>
 								</a>
 
 							<!-- Nav -->
@@ -52,6 +75,11 @@
 						<div class="inner">
 							<h1>Share your story</h1>
 							<p>Share your story by text, video or an audio file. Feel free to add pictures or illustrations.</p>
+							<ul class="actions fit">
+								<li><a href="#" id="show_audio" class="button">Record audio</a></li>
+								<li><a href="#" id="show_text" class="button">Text or video</a></li>
+							</ul>
+							<div id="textadd" style="display: none;">
 							<section>
 								<form method="post" action="#" enctype="multipart/form-data">
 									<div class="field half first">
@@ -70,6 +98,7 @@
 									<div class="field">
 										<textarea name="message" id="message" placeholder="Your story"></textarea>
 									</div>
+									 <p>Feel free to add illustrations, artwork, videos or pictures, or upload an audio file.</p>
 									<div class="field half first">
 									<input type="file" size="20" name="filstreng"/>
 								</div>
@@ -79,7 +108,15 @@
 								</form>
 							</section>
 							</div>
-					</div>
+
+
+							<div id="audio" style="display: none;">
+								<a href="#"><img src="audio.png" width="80px" alt="audio-icon you can click to start recording voice."/></a>
+								<p>Click Icon to begin recording your story<p>
+
+							</div>
+							</div>
+				</div>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -96,19 +133,12 @@
 								</ul>
 							</section>
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Saga. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
 
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
